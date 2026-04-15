@@ -1,10 +1,12 @@
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from http.server import BaseHTTPRequestHandler
 from urllib import error, request
 
 GOOGLE_SHEETS_WEBHOOK_URL = os.getenv("GOOGLE_SHEETS_WEBHOOK_URL", "").strip()
+
+IST = timezone(timedelta(hours=5, minutes=30))
 
 
 def append_signup_to_google_sheets(email, phone):
@@ -13,7 +15,7 @@ def append_signup_to_google_sheets(email, phone):
 
     payload = json.dumps(
         {
-            "submittedAt": datetime.now(timezone.utc).isoformat(),
+            "submittedAt": datetime.now(IST).isoformat(),
             "email": email,
             "phone": phone,
             "source": "website",
