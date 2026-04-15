@@ -1,0 +1,9 @@
+{
+  "name": "tikona-waitlist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Branded waitlist landing page for Tikona Capital with Excel export.",
+  "scripts": {
+    "start": "python server.py"
+  }
+}

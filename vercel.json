@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/waitlist",
+      "destination": "/api/index.py"
+    }
+  ]
+}

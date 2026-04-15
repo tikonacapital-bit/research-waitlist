@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tikona Capital - Join the Waitlist</title>
+    <meta
+      name="description"
+      content="Join the Tikona Capital waitlist for early access to our upcoming product launch."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="split-page">
+      <section class="demo-section">
+        <div class="demo-grid-bg"></div>
+
+        <div class="demo-copy">
+          <p class="demo-kicker">Live Product Preview</p>
+          <h2>Early access ready</h2>
+          <p class="demo-desc">
+            Preview the Tikona Capital analyst experience before launch and join the waitlist from
+            the same screen.
+          </p>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="mockup-notch"></div>
+          <img src="/assets/demo.jpeg" alt="Tikona Capital App Demo" class="demo-image" />
+        </div>
+      </section>
+
+      <section class="waitlist-section">
+        <div class="waitlist-card">
+          <a
+            class="logo-wrap"
+            href="https://www.tikonacapital.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="brand-logo"
+              src="https://www.tikonacapital.com/assets/logo-sUFGv148.png"
+              alt="Tikona Capital"
+            />
+          </a>
+
+          <p class="eyebrow">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
+              <circle cx="4" cy="4" r="4" fill="currentColor" />
+            </svg>
+            Coming Soon
+          </p>
+
+          <h1>Get early access</h1>
+          <p class="lede">
+            Join the waitlist to get launch updates, product access, and direct news from Tikona
+            Capital.
+          </p>
+
+          <div class="mini-points">
+            <span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path
+                  d="M2 6.5l3 3L11 3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Early access
+            </span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path
+                  d="M2 6.5l3 3L11 3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              AI research workflows
+            </span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path
+                  d="M2 6.5l3 3L11 3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Priority updates
+            </span>
+          </div>
+
+          <form id="waitlist-form" novalidate>
+            <div class="field-group">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="phone"
+                >Phone number <span class="optional-tag">optional</span></label
+              >
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+91 98765 43210"
+                autocomplete="tel"
+                maxlength="16"
+              />
+            </div>
+
+            <button type="submit">Join the Waitlist</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+
+          <p class="privacy-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </section>
+    </main>
+
+    <div id="success-popup" class="popup-overlay" hidden>
+      <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M4 13l6 6L22 7"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h2 id="popup-title">You're on the list</h2>
+        <p id="popup-message" class="popup-message">
+          We'll reach out as soon as we're ready to onboard the next wave.
+        </p>
+        <button id="popup-close" class="popup-close" type="button">Done</button>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
